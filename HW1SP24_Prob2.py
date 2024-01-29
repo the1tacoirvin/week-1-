@@ -1,7 +1,9 @@
 import random
 def main(n):
+    ''' find dice roll problitlby for 3 dice as that is all i could figure out'''
     for x in range(10):
         def rollDie():
+            '''could not firgue out how to import, so this just decide what number is rolled'''
             import random
             x = random.random()
             if x <= 1.0 / 6:
@@ -19,6 +21,7 @@ def main(n):
         val = rollDie()
 
         def rollDices(N):
+            ''' finds sum of rolling three times'''
             trials = []
             for i in range(N):
                 trials.append(rollDie())
@@ -28,6 +31,7 @@ def main(n):
 
     for x in range(1):
         def rollFairDiesone():
+            '''is supposed to calcualte problity, does not work'''
             one = 0
             y = random.random()
             for i in range(1000):
@@ -36,6 +40,7 @@ def main(n):
                 return one
 
         def rollFairDiestwo():
+            '''is supposed to calcualte problity, does not work'''
             two = 0
             y = random.random()
             for i in range(1000):
@@ -44,6 +49,7 @@ def main(n):
                 return two
 
         def rollFairDiesthree():
+            '''is supposed to calcualte problity, does not work'''
             three = 0
             y = random.random()
             for i in range(1):
@@ -52,6 +58,7 @@ def main(n):
                 return three
 
         def rollFairDiesfour():
+            '''is supposed to calcualte problity, does not work'''
             four = 0
             x = random.random()
             for i in range(1000):
@@ -60,6 +67,7 @@ def main(n):
                 return four
 
         def rollFairDiesfive():
+            '''is supposed to calcualte problity, does not work'''
             five = 0
             x = random.random()
             for i in range(1000):
@@ -68,6 +76,7 @@ def main(n):
                 return five
 
         def rollFairDiessix():
+            '''is supposed to calcualte problity, does not work'''
             six = 0
             x = random.random()
             for i in range(1000):
@@ -76,35 +85,41 @@ def main(n):
                 return six
 
         def simulateone(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiesone())
             return (sum(trials) / n)
 
         def simulatetwo(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiestwo())
             return (sum(trials) / n)
 
         def simulatethree(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiesthree())
             return (sum(trials) / n)
 
         def simulatefour(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiesfour())
             return (sum(trials) / n)
 
         def simulatefive(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiesfive())
             return (sum(trials) / n)
         def simulatesix(n):
+            '''is supposed to calcualte problity, does not work'''
             trials = []
             for i in range(n):
                 trials.append(rollFairDiessix())
@@ -115,5 +130,6 @@ def main(n):
         print("Probability of rolling a 3:", simulatethree(10))
         print("Probability of rolling a 4:", simulatefour(10))
         print("Probability of rolling a 5:", simulatefive(10))
+        print("Probability of rolling a 6:", simulatesix(10))
 
 print(main(10))

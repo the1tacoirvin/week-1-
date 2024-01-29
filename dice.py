@@ -1,4 +1,5 @@
 def rollDie():
+    ''' calcualte dice roll for a 6 sides die'''
     import random
     x = random.random()
     one = 0
@@ -21,6 +22,7 @@ def rollDie():
         return 6
 
 def rollDicesda(N):
+    '''find sume of 3 dice rools'''
     trials = []
     for i in range(N):
         trials.append(rollDie())
